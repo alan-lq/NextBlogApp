@@ -1,9 +1,10 @@
 import React from 'react'
+import Link from 'next/link'
 
 const Header = () => {
   return (
     <div className='border-b flex justify-between'>
-      <div className='text-4xl px-2 py-4'>LOGO</div>
+      <Link href='/' className='text-4xl px-2 py-4'>LOGO</Link>
    <button className='text-white bg-black px-4 py-4'>Sign in</button>
     </div>
   )
