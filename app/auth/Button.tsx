@@ -21,6 +21,6 @@ export const Button = (props: Props) => {
     )
   }
   return (
-    <div onClick={() => signIn()} className="text-white bg-black p-4 cursor-pointer">Sign In</div>
+    <button onClick={() => signIn()} className="text-white bg-black p-4 cursor-pointer">Sign In</button>
   )
 }
