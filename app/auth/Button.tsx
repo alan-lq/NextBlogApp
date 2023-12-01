@@ -14,13 +14,16 @@ export const Button = (props: Props) => {
 
   if (session) {
     return (
+      <div className='flex items-stretch'>
+        <Link href="/blog/new" className='mr-6 hover:underline self-center'>✍️ Write a Post</Link>
         <button className="text-white bg-black p-4 cursor-pointer" onClick={(e) => {
           e.preventDefault()
           signOut()
         }}>Sign Out</button>
+      </div>
     )
   }
   return (
-    <button onClick={() => signIn()} className="text-white bg-black p-4 cursor-pointer">Sign In</button>
+    <div onClick={() => signIn()} className="text-white bg-black p-4 cursor-pointer">Sign In</div>
   )
 }
